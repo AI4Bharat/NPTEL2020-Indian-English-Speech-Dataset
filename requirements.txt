@@ -1,6 +1,6 @@
 torch
 torchvision
-nemo_toolkit[asr]==0.10.0b10
+nemo_toolkit[asr]==0.11.0
 unidecode
 braceexpand
 editdistance
