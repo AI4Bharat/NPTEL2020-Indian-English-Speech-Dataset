@@ -1,4 +1,6 @@
-# NPTEL2020 - Indian English Speech Dataset (Education domain)
+# NPTEL2020 - Indian English Speech Dataset
+
+A Speech-to-Text dataset scraped from [NPTEL](https://nptel.ac.in/course.html) for [Indo-English accent](https://en.wikipedia.org/wiki/Regional_differences_and_dialects_in_Indian_English), from Education Domain.
 
 ## Crawl Information
 
@@ -7,21 +9,21 @@
 |Crawl Period|April 2020|
 |Source|[NPTEL-HRD YouTube](https://www.youtube.com/user/nptelhrd)|
 |Crawl Type|Only videos with manually uploaded subtitles|
-|Content License|[Creative Commons](https://www.youtube.com/t/creative_commons)
+|Content License|[Creative Commons](https://www.youtube.com/t/creative_commons)|
 |Language|English (most videos are in South-Asian accent)|
 |Domain|General & Technical Education|
 |Crawling and Processing Code|[Fast-KTSpeechCrawler](https://github.com/Prem-kumar27/Fast-KTSpeechCrawler)|
 |Total Videos Crawled|19,500|
 |Average Video Duration|40mins|
-|Dataset Format|LibriSpeech (audio in `wav`, transcript in `txt`)|
+|Dataset Format|LibriSpeech (audio in `wav`, transcript in `txt`, metadata in `json`)|
 |No. of chunks created|6,253,389 (6.2M)|
 |Average chunk length|3 - 10 secs|
 |Total no. of hours|15,700 hours|
-|Total Compressed Dataset Size|1.1 TB|
+|Total Compressed Dataset Size|1.1 TB (1.7 TB upon decompression)|
 
 ## Dataset Quality
 
-The dataset was not manually annotated by us. We assume NPTEL use Google ASR on top of which they have made minor corrections.
+The dataset was not manually annotated by us. We assume NPTEL has used Google ASR on top of which they have made reasonable amount of corrections.
 
 We split the dataset as follows: (randomly sampled)
 
@@ -51,11 +53,11 @@ Note:
 |Nvidia Jasper|0.3939|
 |QuartzNet (Ultra-Tiny)|0.3981|
 
-To understand if the data we have crawled is useful, we sample 500k chunks from the train set and train it for an epoch. We chose QuartzNet (Ultra-Tiny) pre-trained model for the fine-tuning because it was lightweight as well as very competitive in accuracy.
+To understand if the data we have crawled is useful, we sample 500k chunks from the train set and fine-tune an English ASR model using that for an epoch. We chose QuartzNet (Ultra-Tiny) pre-trained model for the fine-tuning because it was lightweight as well as very competitive in accuracy as seen above. (Training code can be found in this same repo)
 
 On the Pure-Set, we observed an improvement in WER from 0.5034 (pre-trained model without LM) to 0.3207 (fine-tuned model without LM), which signified a promising scope to use the crawled dataset for much further improvement.
 
-The pre-mature fine-tuned model can be found in the GitHub Releases section of the repo. (Currently due to lack of compute, we couldn't exhaustively use the data and propose the results)
+The pre-mature fine-tuned model can be found in the [GitHub Releases section](https://github.com/AI4Bharat/NPTEL2020-Indian-English-Speech-Dataset/releases) of the repo. (Currently due to lack of compute, we couldn't exhaustively use the data and find out results across different models & methods)
 
 ## Suggestions and Future Works
 
@@ -65,7 +67,9 @@ The pre-mature fine-tuned model can be found in the GitHub Releases section of t
 
 ## Downloads
 
---To Add--
+- [Sample Data (Pure-Set)](https://github.com/AI4Bharat/NPTEL2020-Indian-English-Speech-Dataset/releases/download/v0.1/nptel-pure-set.tar.gz)
+- [Train dataset downloader script]()
+- [Test set and Dev set downloader]()
 
 ## Contact us
 
