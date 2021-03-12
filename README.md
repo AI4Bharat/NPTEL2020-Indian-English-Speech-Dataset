@@ -63,13 +63,15 @@ The pre-mature fine-tuned model can be found in the [GitHub Releases section](ht
 
 - Even though the dataset is noisy compared to publicly available datasets, we believe it would serve as a good intial data for building models.
 - Especially this dataset focuses on South Asian English accent, and is of education domain.
-- Even the raw audio from this dataset would be useful for pre-training ASR models like [Wav2Vec 2.0](https://ai.facebook.com/blog/wav2vec-20-learning-the-structure-of-speech-from-raw-audio/)
+- Even the raw audio from this dataset would be useful for pre-training ASR models like [Wav2Vec 2.0](https://ai.facebook.com/blog/wav2vec-20-learning-the-structure-of-speech-from-raw-audio/).  
+  ([As can be seen on this recent leaderboard](https://sites.google.com/view/englishasrchallenge/leaderboard#h.cteumzu5d5uo))
+- For a better but closed dataset, check this recent competition: [IIT-M Speech Lab - Indian English ASR Challenge](https://sites.google.com/view/englishasrchallenge/home)  
+  (could be available on request)
 
 ## Downloads
 
 - [Sample Data (Pure-Set)](https://github.com/AI4Bharat/NPTEL2020-Indian-English-Speech-Dataset/releases/download/v0.1/nptel-pure-set.tar.gz)
 - [Train, Test and Dev sets downloader scripts](/download_scripts)
-
 
 ## Contact us
 
