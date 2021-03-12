@@ -2,10 +2,6 @@
 
 A Speech-to-Text dataset scraped from [NPTEL](https://nptel.ac.in/course.html) for [Indo-English accent](https://en.wikipedia.org/wiki/Regional_differences_and_dialects_in_Indian_English), from Education Domain.
 
-## How to download?
-
-Use the scripts in [download_scrips](/download_scrips) folder to download the dataset.
-
 ## Crawl Information
 
 |Metadata|Details|
@@ -72,8 +68,8 @@ The pre-mature fine-tuned model can be found in the [GitHub Releases section](ht
 ## Downloads
 
 - [Sample Data (Pure-Set)](https://github.com/AI4Bharat/NPTEL2020-Indian-English-Speech-Dataset/releases/download/v0.1/nptel-pure-set.tar.gz)
-- [Train dataset downloader script]()
-- [Test set and Dev set downloader]()
+- [Train, Test and Dev sets downloader scripts](/download_scripts)
+
 
 ## Contact us
 
