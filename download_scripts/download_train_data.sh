@@ -18,4 +18,4 @@ wget https://zenodo.org/record/4593188/files/nptel-train.tar.gz.partaq
 wget https://zenodo.org/record/4593192/files/nptel-train.tar.gz.partar
 wget https://zenodo.org/record/4593195/files/nptel-train.tar.gz.partas
 wget https://zenodo.org/record/4593199/files/nptel-train.tar.gz.partat
-cat nptel-train.tar.gz.part*>nptel-train.tar
+cat nptel-train.tar.gz.part*>nptel-train.tar.gz

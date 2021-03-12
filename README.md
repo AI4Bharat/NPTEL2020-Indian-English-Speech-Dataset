@@ -2,6 +2,10 @@
 
 A Speech-to-Text dataset scraped from [NPTEL](https://nptel.ac.in/course.html) for [Indo-English accent](https://en.wikipedia.org/wiki/Regional_differences_and_dialects_in_Indian_English), from Education Domain.
 
+## How to download?
+
+Use the scripts in [download_scrips](/download_scrips) folder to download the dataset.
+
 ## Crawl Information
 
 |Metadata|Details|
