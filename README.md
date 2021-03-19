@@ -7,7 +7,7 @@ A Speech-to-Text dataset scraped from [NPTEL](https://nptel.ac.in/course.html) f
 |Metadata|Details|
 |-|-|
 |Crawl Period|April 2020|
-|Source|[NPTEL-HRD YouTube](https://www.youtube.com/user/nptelhrd)|
+|Source|[NPTEL-HRD YouTube](https://www.youtube.com/user/nptelhrd) ([Playlist](https://www.youtube.com/playlist?list=UU640y4UvDAlya_WOj5U4pfA))|
 |Crawl Type|Only videos with manually uploaded subtitles|
 |Content License|[Creative Commons](https://www.youtube.com/t/creative_commons)|
 |Language|English (most videos are in South-Asian accent)|
