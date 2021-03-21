@@ -73,6 +73,13 @@ The pre-mature fine-tuned model can be found in the [GitHub Releases section](ht
 - [Sample Data (Pure-Set)](https://github.com/AI4Bharat/NPTEL2020-Indian-English-Speech-Dataset/releases/download/v0.1/nptel-pure-set.tar.gz)
 - [Train, Test and Dev sets downloader scripts](/download_scripts)
 
+## Crawl your own playlist
+
+In some cases, we might need data containing a single speaker(TTS, Speaker recognition, etc). For that, choose a youtube playlist of your choice
+and crawl it.
+
+Please [check here](https://github.com/Prem-kumar27/Fast-KTSpeechCrawler#downloading-a-playlist) for the instructions to do that on the crawler we used.
+
 ## Contact us
 
 For clarifications, please write on the GitHub Issues section.
