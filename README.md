@@ -1,3 +1,12 @@
+- [NPTEL2020 - Indian English Speech Dataset](#nptel2020---indian-english-speech-dataset)
+  - [Crawl Information](#crawl-information)
+  - [Dataset Quality](#dataset-quality)
+  - [Suggestions and Future Works](#suggestions-and-future-works)
+  - [Downloads](#downloads)
+  - [Download via Torrent](#download-via-torrent)
+  - [Crawl your own playlist](#crawl-your-own-playlist)
+  - [Contact us](#contact-us)
+
 # NPTEL2020 - Indian English Speech Dataset
 
 A Speech-to-Text dataset scraped from [NPTEL](https://nptel.ac.in/course.html) for [Indo-English accent](https://en.wikipedia.org/wiki/Regional_differences_and_dialects_in_Indian_English), from Education Domain.
@@ -72,6 +81,10 @@ The pre-mature fine-tuned model can be found in the [GitHub Releases section](ht
 
 - [Sample Data (Pure-Set)](https://github.com/AI4Bharat/NPTEL2020-Indian-English-Speech-Dataset/releases/download/v0.1/nptel-pure-set.tar.gz)
 - [Train, Test and Dev sets downloader scripts](/download_scripts)
+
+## Download via Torrent
+
+The `opus` [version](https://academictorrents.com/details/cc9dc56afd3055c7e0f021ec4f1824021558926c) of the dataset is hosted via academic torrents. The `opus` version is 10x smaller.
 
 ## Crawl your own playlist
 
