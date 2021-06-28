@@ -86,6 +86,8 @@ The pre-mature fine-tuned model can be found in the [GitHub Releases section](ht
 
 The `opus` [version](https://academictorrents.com/details/cc9dc56afd3055c7e0f021ec4f1824021558926c) of the dataset is hosted via academic torrents. The `opus` version is 10x smaller.
 
+Please seed and make sure that your download ratio reaches `1.0`. Some torrent clients (e.g. `aria2c` have an issue being stuck at 99%).
+
 ## Crawl your own playlist
 
 In some cases, we might need data containing a single speaker(TTS, Speaker recognition, etc). For that, choose a youtube playlist of your choice
