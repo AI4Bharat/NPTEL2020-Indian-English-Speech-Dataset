@@ -1,3 +1,9 @@
+# NPTEL2020 - Indian English Speech Dataset
+
+A Speech-to-Text dataset scraped from [NPTEL](https://nptel.ac.in/course.html) for [Indo-English accent](https://en.wikipedia.org/wiki/Regional_differences_and_dialects_in_Indian_English), from Education Domain.
+
+## Table of Contents
+
 - [NPTEL2020 - Indian English Speech Dataset](#nptel2020---indian-english-speech-dataset)
   - [Crawl Information](#crawl-information)
   - [Dataset Quality](#dataset-quality)
@@ -6,10 +12,6 @@
   - [Download via Torrent](#download-via-torrent)
   - [Crawl your own playlist](#crawl-your-own-playlist)
   - [Contact us](#contact-us)
-
-# NPTEL2020 - Indian English Speech Dataset
-
-A Speech-to-Text dataset scraped from [NPTEL](https://nptel.ac.in/course.html) for [Indo-English accent](https://en.wikipedia.org/wiki/Regional_differences_and_dialects_in_Indian_English), from Education Domain.
 
 ## Crawl Information
 
@@ -51,16 +53,17 @@ Note:
   - For DeepSpeech, we use Baidu's official model.
   - The benchmarking code for others can be [found here](https://github.com/narVidhai/Speech-Transcribers-Python).
 
-|Model/Service|Word Error Rate|
-|-------------|---------------|
-|Actual transcripts|0.1451|
-|Google Speech-to-Text|0.4895|
-|AWS Transcribe|0.3438|
-|Rev.ai (Temi Speech) API|0.3218|
-|ESP-Net|0.4321|
-|DeepSpeech v.0.7|0.5872|
-|Nvidia Jasper|0.3939|
-|QuartzNet (Ultra-Tiny)|0.3981|
+|Model/Service|Word Error Rate|Tested on|
+|-------------|---------------|---------|
+|Actual transcripts|0.1451|-|
+|Google Speech-to-Text|0.4895|May 2020|
+|AWS Transcribe|0.3438|May 2020|
+|Rev.ai (Temi Speech) API|0.3218|May 2020|
+|ESP-Net|0.4321|-|
+|DeepSpeech v.0.7|0.5872|-|
+|Nvidia Jasper|0.3939|-|
+|QuartzNet (Ultra-Tiny)|0.3981|-|
+|Microsoft Cognitive API|0.2004|Dec 2021|
 
 To understand if the data we have crawled is useful, we sample 500k chunks from the train set and fine-tune an English ASR model using that for an epoch. We chose QuartzNet (Ultra-Tiny) pre-trained model for the fine-tuning because it was lightweight as well as very competitive in accuracy as seen above. (Training code can be found in this same repo)
 
@@ -84,14 +87,15 @@ The pre-mature fine-tuned model can be found in the [GitHub Releases section](ht
 
 ## Download via Torrent
 
-The `opus` [version](https://academictorrents.com/details/cc9dc56afd3055c7e0f021ec4f1824021558926c) of the dataset is hosted via academic torrents. The `opus` version is 10x smaller.
+The `opus` [version](https://academictorrents.com/details/cc9dc56afd3055c7e0f021ec4f1824021558926c) of the dataset is hosted via academic torrents. The `opus` version is 10x smaller. (only around 100GB since it is in opus audio format)
 
 Please seed and make sure that your download ratio reaches `1.0`. Some torrent clients (e.g. `aria2c` have an issue being stuck at 99%).
 
+(Thanks to [Alexander Veysov](https://github.com/snakers4) for contributing this!)
+
 ## Crawl your own playlist
 
-In some cases, we might need data containing a single speaker(TTS, Speaker recognition, etc). For that, choose a youtube playlist of your choice
-and crawl it.
+In some cases, you might need to crawl more data or require data containing a single speaker (for TTS, Speaker recognition, etc). For that, choose a youtube playlist of your choice and crawl it.
 
 Please [check here](https://github.com/Prem-kumar27/Fast-KTSpeechCrawler#downloading-a-playlist) for the instructions to do that on the crawler we used.
 
